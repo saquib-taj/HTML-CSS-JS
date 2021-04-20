@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Bulb</title><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body>
+	<h1>BULB</h1>
+
+	<img id="Image" src="Image/pic_bulboff.gif" alt="Pic not found" width="100" height="180">
+
+	<p>
+	<button type="button" style="background-color:yellow;color:red" onclick="func(1)">Turn on light</button>
+	<button type="button" onclick="func(0)">Turn off light</button>
+    </p>
+
+    	<script>
+    	function func(sw){
+    	var pic;	
+    		if(sw==0)
+    			{pic="Image/pic_bulboff.gif"}
+    		else
+    			{pic="Image/pic_bulbon.gif"}
+    	document.getElementById("Image").src = pic;
+    	}
+    </script>
+
+</body>
+</html>    	
