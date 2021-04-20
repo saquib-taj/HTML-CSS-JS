@@ -1,0 +1,127 @@
+
+* {
+	box-sizing: border-box;
+}
+
+/* For Project-1: Your Age In Days... */
+.container-1 {
+	border: 1px solid green;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: black;
+	margin-top: 20px; 
+	padding: 10px 0 10px 0;
+}
+
+.container-1 h2 {
+	color: violet;
+}
+
+.container-1 h3 {
+	color: white;
+}
+
+.flex-1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 1px solid green;
+	padding: 20px;
+}
+
+
+
+/* For Project-2: Random Image Generator... */
+.container-2 {
+	width: 70%;
+	border: 1px solid green;
+	background-color: black;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 10px 0 10px 0;
+}
+
+.container-2 h2 {
+	color: violet;
+}
+
+.flex-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 15px;
+	border: 1px solid green;
+}
+
+#genImg img {
+	width: 220px;
+	height: 180px;
+	margin: 10px 10px;
+	box-shadow: 4px 10px 30px 4px;
+}
+
+
+
+/*For Project-3: Changing Button Colors... */
+.container-3 {
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	border: 1px solid green;
+	background-color: black;
+	padding: 10px 0 10px 0;
+	width: 70%;
+}
+
+.container-3 h2 {
+	color: violet;
+}
+
+.flex-3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 1px solid green;
+	padding: 15px;
+}
+
+.formDiv {
+	padding-top: 15px;
+}
+
+select {
+	width: 160px;
+	text-align: center;
+	padding-left: 40px;
+} 
+
+
+
+/*  For Project-4: Rock, Paper, Scissors */
+.container-4 {
+	width: 70%;
+	border: 1px solid green;
+	background-color: black;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+.container-4 h2 {
+	color: violet;
+}
+
+.flex-4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 1px solid green;
+	padding: 15px;
+}
+
+.flex-4 img:hover {
+	box-shadow: 8px 10px 30px 4px #007bff;
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 220px;
+    height: 100px;
+    padding: 15px 0px 0px 20px;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.head {
+    font-size: 30px;
+}
+
+.slogan {
+    font-size: 20px;
+    text-align: center;
+}
+
+.col-25 {
+    width: 20%;
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.col-25 ul {
+    background-color: black;
+    list-style-type: none;
+    color: white;
+    height: 100%;
+    position: fixed;
+    width: 20%;
+    border-top-right-radius: 6px;
+}
+
+.col-25 ul li a {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    font-size: large;
+    border-bottom: 1px solid gray;
+}
+
+.col-25 ul li a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.active {
+    background-color: red;
+}
+
+.col-75 {
+    width: 80%;
+    float: right;
+    margin: 10px 0 0 0;
+    background: url("../Photos/l5.jpg");
+    background-size: cover;
+    border-top-left-radius: 6px;
+    height: 520px;
+    position: relative;
+}
+
+label {
+    font-size: 40px;
+    color: white;
+}
+
+select {
+    width: 380px;
+    padding-left: 140px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+ .form-1 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.form-2 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+} 

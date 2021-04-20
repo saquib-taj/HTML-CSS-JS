@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+.container-1 {
+	border: 1px solid green;
+	text-align: center;
+	width: 65%;
+	background-color: black;
+	color: white;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+
+.flex-1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center; 
+	border: 1px solid green;
+	padding: 20px;
+}
+
+.container-1 h1 {
+	color: gold;
+}

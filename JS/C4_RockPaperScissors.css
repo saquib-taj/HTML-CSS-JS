@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+.container-4 {
+	border: 1px solid green;
+	background-color: black;
+	color: gold;
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.flex-4 {
+	border: 1px solid green;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 15px;
+	align-items: center;
+}
+
+.flex-4 img:hover {
+	box-shadow: 4px 10px 30px 4px dodgerblue;
+}

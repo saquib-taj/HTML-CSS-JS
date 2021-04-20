@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PROJECTS</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Projects.css">
+</head>
+
+<body>
+
+<!-- For Project-1: Your Age in Days -->
+	<div class="container-1">
+		<h2>Project-1: Your Age in Days</h2>
+
+		<div class="flex-1">
+			<div>
+				<button class="btn-lg btn-primary" onclick="clickMe()">Click Me</button>
+			</div>
+
+			<div>
+				<button class="btn-lg btn-danger" onclick="reset()">Reset</button>
+			</div>
+		</div>
+
+		<div class="flex-1">
+			<h3 id="p1-result"></h3>
+		</div>
+    </div>
+
+
+
+<!-- For Project-2: Random Image Generator -->
+	<div class="container-2">
+		<h2>Project-2: Random Image Generator</h2>
+
+		<div class="flex-2">
+			<div>
+				<button class="btn-lg btn-success" onclick="imgGen()">Generate Image</button>
+			</div>
+
+			<div>
+				<button class="btn-lg btn-danger" onclick="removeAll()">Remove All</button>
+			</div>
+		</div>
+
+		<div class="flex-2" id="genImg"></div>
+	</div>
+
+
+
+<!-- For Project-3: Changing Button Colors... -->
+	<div class="container-3">
+		<h2>Project-3: Changing Button Colors</h2>
+
+		<div class="flex-3">
+			<div class="formDiv">
+				<form action="">
+					<select name="selected" onchange="btnFunc(this)">
+						<option value="default">Default</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+						<option value="yellow">Yellow</option>
+						<option value="blue">Blue</option>
+						<option value="random">Random</option>
+					</select>
+				</form>
+			</div>
+
+			<div>
+				<button class="btn-lg btn-danger">Danger</button>
+			</div>
+			
+			<div>	
+				<button class="btn-lg btn-success">Success</button>
+			</div>
+			
+			<div>	
+				<button class="btn-lg btn-warning">Warning</button>
+			</div>
+			
+			<div>	
+				<button class="btn-lg btn-primary">Primary</button>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- For Project-4: Rock, Paper, Scissors -->
+	<div class="container-4">
+		<h2>Project-4: Rock, Paper, Scissors</h2>
+
+		<div class="flex-4" id="flex-4">
+			<img src="Photos/stone.jpg" id="rock" width="191px" height="189px" onclick="rps(this)">
+			<img src="Photos/paper.jpg" id="paper" width="191px" height="189px" onclick="rps(this)">
+			<img src="Photos/scissors.jpg" id="scissors" width="191px" height="189px" onclick="rps(this)">
+		</div>
+
+		<div class="flex-4">
+			<button class="btn-lg btn-danger" style="width: 200px;" onclick="restart()">Restart</button>
+		</div>
+	</div>
+
+    <script type="text/javascript" src="Projects.js"></script>
+</body>
+</html>

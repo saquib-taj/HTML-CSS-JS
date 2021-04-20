@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+.container-3 {
+	border: 1px solid green;
+	background-color: black;
+	color: gold;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+	width: 65%;
+}
+
+.flex-3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+	align-items: center;
+	border: 1px solid green;
+}

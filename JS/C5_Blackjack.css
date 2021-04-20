@@ -1,0 +1,58 @@
+/* CSS for BlackJack */
+
+.container-5 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 20px;
+    background: black;
+    color: white;
+}
+
+.container-5 h1 {
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+}
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    background: #006600;
+    color: white;
+}
+
+.row-1 div {
+    border: 1px solid black;
+    padding: 10px;
+    height: 350px;
+    flex: 1;
+}
+
+.row-1 img {
+    padding: 10px;
+    width: 25%;
+}
+
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background: #006600;
+}
+
+
+table, th, td {
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8px;
+}

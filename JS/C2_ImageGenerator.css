@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+.container-2 {
+	border: 1px solid green;
+	margin: 0 auto;
+	width: 65%;
+	margin-top: 8px;
+	background-color: black;
+	color: gold;
+	text-align: center;
+}
+
+.flex-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid green;
+	padding: 20px;
+}	
+
+#genImg img {
+	margin: 10px;
+	width: 200px; 
+	height: auto; 
+	box-shadow: 4px 10px 30px 4px gray;
+}

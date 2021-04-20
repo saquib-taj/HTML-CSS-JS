@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change the Button Color</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="C3_ButtonColorChanger.css">
+</head>
+
+<body>
+	<div class="container-3">
+		<h1>Change the Button Colors</h1>
+
+		<div class="flex-3">
+			<div>
+				<form action="">
+					<select name="dropdown" onchange="btncolors(this)">
+						<option value="default">Default</option>
+						<option value="red">Red</option>
+						<option value="blue">Blue</option>
+						<option value="yellow">Yellow</option>
+						<option value="green">Green</option>
+						<option value="random">Random</option>
+					</select>
+				</form>
+			</div>
+
+			<div>
+				<button type="button" class="btn btn-danger" style="font-size: large;">Google</button>
+			</div>
+
+			<div>
+				<button type="button" class="btn btn-primary" style="font-size: large;">Facebook</button>
+			</div>
+
+			<div>
+				<button type="button" class="btn btn-warning" style="font-size: large;">Snapchat</button>
+			</div>
+
+			<div>
+				<button type="button" class="btn btn-success" style="font-size: large;">Twitter</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="C3_ButtonColorChanger.js"></script>
+</body>
+</html>

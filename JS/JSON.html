@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON</title>
+	<style>
+		.hide-me {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Click button</h1>
+	<button id="btn" style="font-size: 2em; background-color: blue; color: white;padding: 2px;">Click Me</button>
+
+	<div id="container" style="border-bottom: 1px solid gray;"></div>
+
+	<script>
+		// var pet = {
+		// 	"name" : "cat",
+		// 	"breed" : "special",
+		// };
+
+		// var favColor = ["blue", "green", "black"];
+
+		// console.log(pet.name);
+		// console.log(pet.breed);
+		// console.log(favColor[0]);
+		// console.log(favColor[1]);
+
+		// var pets = [
+		// 	{
+		// 		"name" : "cat",
+		// 		"breed" : "special",
+		// 	},
+
+		// 	{
+		// 		"name" : "dog",
+		// 		"breed" : "luna",
+		// 	}
+		// ];
+
+		// console.log(pets[1].name);
+
+
+		// var btn = document.getElementById('btn');
+
+		// btn.addEventListener("click", function() {
+		// 	var ourRequest = new XMLHttpRequest();
+		// 	ourRequest.open("GET", "https://learnwebcode.github.io/json-example/animals-1.json");
+		// 	ourRequest.onload = function () {
+		// 	var Data = JSON.parse(ourRequest.response);
+		// 	console.log(Data[0]);
+		// };
+		// ourRequest.send();
+		// });
+			
+
+		// var ourRequest = new XMLHttpRequest();
+		// ourRequest.open("GET", "https://learnwebcode.github.io/json-example/animals-1.json");
+		// ourRequest.onload = function () {
+		// 	console.log(ourRequest.responseText);
+		// };
+
+		// ourRequest.send();	
+
+		var count =1;
+		var btn = document.getElementById("btn");
+		var animalContainer = document.getElementById("container");
+
+		btn.addEventListener("click", function () {
+
+			var ourRequest = new XMLHttpRequest();
+			ourRequest.open("GET", "https://learnwebcode.github.io/json-example/animals-" + count + ".json");
+			ourRequest.onload = function () {
+				if (ourRequest.status >= 200 && ourRequest.status <= 400) {
+					var newData = JSON.parse(ourRequest.responseText);
+					renderHTML(newData);
+				} else {
+					console.log("We connect to the server but it returns error");
+				}
+
+				};
+
+				ourRequest.onerror = function() {
+					console.log("Connection Error");
+				}
+
+		ourRequest.send();
+		count ++;
+		if (count > 3) {
+			btn.classList.add("hide-me");
+		}
+		})
+
+		function renderHTML(data) {
+
+			var string = "";
+
+			for (var i = 0; i < data.length; i++) {
+				string += "<p>" + data[i].name + " is a " + data[i].species + " that loves to eat ";
+
+				for(var ii = 0; ii < data[i].foods.likes.length; ii++) {
+					if(ii == 0) {
+						string += data[i].foods.likes[ii];
+					} else {
+						string += ' and ' + data[i].foods.likes[ii];
+					}
+				}
+
+				string += " and dislikes ";
+
+				for(var ii = 0; ii < data[i].foods.dislikes.length; ii++) {
+					if(ii == 0) {
+						string += data[i].foods.dislikes[ii];
+					} else {
+						string += ' and ' + data[i].foods.dislikes[ii];
+					}
+				}
+
+				string += ".</p>";
+			}
+			animalContainer.insertAdjacentHTML("beforeend", string);
+		}
+		
+	</script>
+</body>
+</html>
